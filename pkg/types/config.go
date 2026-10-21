@@ -80,7 +80,7 @@ func (config *ServiceConfig) PopulateFromUrl(providerUrl string) error {
 	typeAndProtocol := strings.Split(url.Scheme, ".")
 
 	// TODO: Enforce both Type and Protocol present for release V2.0.0
-	// Support for default protocol is for backwards compatibility with Fuji Device Services.
+	// Support for default protocol is for backwards compatibility with Fuji Node Services.
 	switch len(typeAndProtocol) {
 	case 1:
 		config.Type = typeAndProtocol[0]
